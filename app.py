@@ -63,12 +63,12 @@ with col2:
 # ===============================
 st.subheader("Masukkan Spesifikasi Mobil")
 
-enginesize = st.number_input("Engine Size", float(X['enginesize'].min()), float(X['enginesize'].max()), float(X['enginesize'].mean()))
-horsepower = st.number_input("Horsepower", float(X['horsepower'].min()), float(X['horsepower'].max()), float(X['horsepower'].mean()))
-curbweight = st.number_input("Curb Weight", float(X['curbweight'].min()), float(X['curbweight'].max()), float(X['curbweight'].mean()))
-carwidth = st.number_input("Car Width", float(X['carwidth'].min()), float(X['carwidth'].max()), float(X['carwidth'].mean()))
-highwaympg = st.number_input("Highway MPG", float(X['highwaympg'].min()), float(X['highwaympg'].max()), float(X['highwaympg'].mean()))
-citympg = st.number_input("City MPG", float(X['citympg'].min()), float(X['citympg'].max()), float(X['citympg'].mean()))
+enginesize = st.number_input("Ukuran Mesin (Engine Size)", float(X['enginesize'].min()), float(X['enginesize'].max()), float(X['enginesize'].mean()))
+horsepower = st.number_input("Tenaga Mesin (Horsepower)", float(X['horsepower'].min()), float(X['horsepower'].max()), float(X['horsepower'].mean()))
+curbweight = st.number_input("Berat Mobil Kosong (Curb Weight)", float(X['curbweight'].min()), float(X['curbweight'].max()), float(X['curbweight'].mean()))
+carwidth = st.number_input("Lebar Mobil (Car Width)", float(X['carwidth'].min()), float(X['carwidth'].max()), float(X['carwidth'].mean()))
+highwaympg = st.number_input("Efisiensi Jalan Tol (Highway MPG)", float(X['highwaympg'].min()), float(X['highwaympg'].max()), float(X['highwaympg'].mean()))
+citympg = st.number_input("Efisiensi Dalam Kota (City MPG)", float(X['citympg'].min()), float(X['citympg'].max()), float(X['citympg'].mean()))
 
 toleransi = st.slider("Toleransi Selisih Harga (USD)", 100, 10000, 2000)
 
